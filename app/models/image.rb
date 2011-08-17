@@ -5,7 +5,7 @@ class Image < ActiveRecord::Base
   validates_presence_of :url
   
   def self.random!
-    if (c = count) != 0
+    if (c = all.count) != 0
       image = first(:offset => rand(c))
       image.uses += 1
       image.save
