@@ -4,6 +4,7 @@ gem 'rails', '3.1.0.rc6'
 gem 'haml'
 gem 'friendly_id'
 gem 'jquery-rails'
+gem 'rake', '0.8.7'
 
 group :development, :test do
   gem 'haml-rails'
